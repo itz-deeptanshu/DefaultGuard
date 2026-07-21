@@ -4,10 +4,10 @@ An end-to-end ML pipeline that predicts whether a loan applicant will
 default, built around two core problems:
 
 1. **Imbalanced data** — most borrowers repay, so a naive model just
-   predicts "repaid" for everyone and looks accurate while being useless.
+   predicts "repaid" for everyone and looks accurate while being useless
 2. **Asymmetric business cost** — missing a real defaulter is far more
    expensive than wrongly rejecting a good customer, so the decision
-   threshold should reflect that, not sit at a default 0.5.
+   threshold should reflect that, not sit at a default 0.5
 
 ## Files
 
@@ -34,7 +34,7 @@ python3 loan_default_pipeline.py --data data/credit_risk_dataset.csv --cost-fn 5
 
 `--cost-fn` / `--cost-fp` are relative weights for the two error types
 (see "Threshold tuning" below) — replace with real numbers
-(e.g. average loan principal ÷ average interest margin) once available.
+(e.g. average loan principal ÷ average interest margin) once available
 
 ## Dataset
 
